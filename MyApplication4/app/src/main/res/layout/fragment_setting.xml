@@ -1,0 +1,233 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.home.myapplication.SettingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            tools:context="com.example.home.loginapp2.HomeActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center">
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sbdistance"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView5"
+                android:indeterminate="false"
+                android:layout_below="@+id/textView4" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cafeswitch"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentEnd="true"
+                android:checked="false" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/westernswitch"
+                android:layout_below="@+id/cafeswitch"
+                android:layout_alignParentEnd="true"
+                android:checked="false" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chineseswitch"
+                android:layout_below="@+id/westernswitch"
+                android:layout_alignParentEnd="true"
+                android:checked="false" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/barswitch"
+                android:checked="false"
+                android:layout_below="@+id/chineseswitch"
+                android:layout_alignEnd="@+id/sbdistance" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/japaneseswitch"
+                android:checked="false"
+                android:layout_below="@+id/barswitch"
+                android:layout_alignParentEnd="true" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mamakswitch"
+                android:checked="false"
+                android:layout_below="@+id/japaneseswitch"
+                android:layout_alignStart="@+id/japaneseswitch"
+                android:layout_marginTop="26dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bakeryswitch"
+                android:layout_alignParentEnd="true"
+                android:checked="false"
+                android:layout_below="@+id/halalswitch"
+                android:layout_alignParentLeft="true" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/halalswitch"
+                android:checked="false"
+                android:layout_alignTop="@+id/halaltv"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Distance (0.5KM)"
+                android:id="@+id/distancetv"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Choice"
+                android:id="@+id/textView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Category to display"
+                android:id="@+id/textView5"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="27dp"
+                android:layout_below="@+id/distancetv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Cafe"
+                android:id="@+id/cafetv"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Western "
+                android:id="@+id/westerntv"
+                android:layout_below="@+id/cafeswitch"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Chinese"
+                android:id="@+id/chinesetv"
+                android:layout_below="@+id/westernswitch"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Japanese"
+                android:id="@+id/japanesetv"
+                android:layout_below="@+id/barswitch"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bar"
+                android:id="@+id/bartv"
+                android:layout_below="@+id/chineseswitch"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mamak"
+                android:id="@+id/mamaktv"
+                android:layout_below="@+id/koreanswitch"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Optional Detail"
+                android:id="@+id/textView12"
+                android:layout_marginTop="27dp"
+                android:layout_below="@+id/mamakswitch"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="halal"
+                android:id="@+id/halaltv"
+                android:layout_below="@+id/textView12"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="bakery"
+                android:id="@+id/bakerytv"
+                android:layout_below="@+id/halalswitch"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Korean"
+                android:id="@+id/koreantv"
+                android:layout_below="@+id/japaneseswitch"
+                android:layout_alignParentStart="true" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/koreanswitch"
+                android:checked="false"
+                android:layout_alignBaseline="@+id/koreantv"
+                android:layout_alignBottom="@+id/koreantv"
+                android:layout_alignStart="@+id/mamakswitch" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
